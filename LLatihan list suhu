@@ -1,0 +1,33 @@
+print ('List ADD, EDIT, REMOVE (ketik "0" untuk kembali)')
+while True:
+    Opening = int(input('Apa yang ingin anda lakukan ?\n1. Add\n2. Edit\n3. remove\n4. Done\n'))
+    if Opening == 1:
+        while True :
+            nambah = float(input('Masukkan nilai suhu saat ini :'))
+            if nambah > 0:
+                suhu.append(nambah)
+                for i in suhu:
+                    print(i);
+            else :
+                break
+    if Opening == 2:
+        ubah = int(input('Masukkan nilai keberapa yang ingin diubah : Nilai ke-'))
+        ubah -= 1
+        nilai_ubah = float(input('Diubah menjadi berapa :'))
+        suhu[ubah] = nilai_ubah
+        for i in suhu:
+            print(i);
+
+    if Opening == 3:
+        ngurang = int(input('Masukkan nilai keberapa yang ingin dihapus :'))
+        ngurang-= 1
+        suhu.pop(ngurang)
+        for i in suhu:
+            print (i);
+            
+    if Opening == 4:
+        print ('list akhir :\n')
+        for i in suhu:
+            print (i);
+        else :
+            break
