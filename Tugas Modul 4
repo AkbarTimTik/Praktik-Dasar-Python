@@ -1,0 +1,47 @@
+PRAKTIK MODUL4
+
+Program lampu berdasarkan nilai cahaya sekitar:
+import random
+hari = 1
+while True:
+  mendung = [500,1000,700,1500,2000]
+  Random = random.randint(0,4)
+  tingdung = mendung[Random]
+  LuLam = 2
+  tolux = random.randint(100,25000)
+  Intensitas = tolux/LuLam - tingdung
+  
+  print('Hari ke-', hari)
+  print("intensitas cahaya = ",Intensitas)
+  if Intensitas >= 10000:
+    print('sekarang sedang cerah\nLampu = Mati')
+  elif Intensitas < 10000 and Intensitas > 800:
+    print('Agak gelap sekarang, tapi gpp\nLampu = Mati')
+  elif Intensitas < 800:
+    print('Gelap nyoo\nLampu = Nyala')
+  IN = (input('Mau cek lagi?'))
+  hari += 1
+  if IN == 'tidak':
+    break
+
+
+Program Nilai lulus atau tidak:
+nama= ['Akbar','Kenzi','Bahar','Rafi','Alfin']
+nilaiA= [80,70,50,70,90]
+nilaiB = [70,70,100,74,85]
+u = 0
+rataA = sum(nilaiA)/5
+rataB = sum(nilaiB)/5
+# print(rata_A,'dan', rata_B)
+
+for i in (nama):
+  rataper = nilaiA[u] + nilaiB[u] / 2
+
+  print('Nilai',nama[u],'adalah',nilaiA[u],'dan',nilaiB[u])
+
+  if nilaiA[u] >= rataA and nilaiB[u] >= rataB:
+    print('Mahasiswa',nama[u],'dinyatakan lulus dengan rata-rata',rataper)
+  else:
+    print('Mahasiswa',nama[u],'dinyatakan tidak lulus dengan rata-rata',rataper,'\n')
+
+  u += 1
