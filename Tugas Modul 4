@@ -1,6 +1,6 @@
 PRAKTIK MODUL4
 
-Program lampu berdasarkan nilai cahaya sekitar:
+Program [SISTEM LAMPU JALAN]:
 import random
 hari = 1
 while True:
@@ -25,7 +25,7 @@ while True:
     break
 
 
-Program Nilai lulus atau tidak:
+Program [SISTEM RATA-RATA NILAI]:
 nama= ['Akbar','Kenzi','Bahar','Rafi','Alfin']
 nilaiA= [80,70,50,70,90]
 nilaiB = [70,70,100,74,85]
